@@ -6,7 +6,6 @@ services:
     ports:
       - "8000:8000"
     env_file:
-      # Use the .env file from the root directory
       - .env
     depends_on:
       - redis

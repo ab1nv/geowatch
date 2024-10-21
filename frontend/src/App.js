@@ -6,8 +6,7 @@ function App() {
 
     useEffect(() => {
         axios
-            .get("http://localhost:8000/example")  // Ensure backend runs on port 8000
-            .then((response) => {
+            .get("http://localhost:8000/example").then((response) => {
                 setMessage(response.data.message);
             })
             .catch((error) => {
