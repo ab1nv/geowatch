@@ -11,7 +11,7 @@ class ExampleItem(BaseModel):
 
 @router.get("/")
 async def get_example():
-    return {"message": "API CHAL RHA HAI"}
+    return {"message": "API is up and running."}
 
 
 @router.post("/")
