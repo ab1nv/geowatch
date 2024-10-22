@@ -16,17 +16,18 @@ To contribute code to Geowatch, follow these steps:
 ```bash
 git clone -b dev https://github.com/YOUR_USERNAME/geowatch.git
 ```
-3. Install Docker: Download and install Docker from the [official website](https://docs.docker.com/engine/install/). Make sure both `docker` and `docker-compose` are installed.
-4. Run Locally: Navigate to the project directory and run:
+3. Update .env: Rename `example.env` to `.env` and fill in the required keys.
+4. Install Docker: Download and install Docker from the [official website](https://docs.docker.com/engine/install/). Make sure both `docker` and `docker-compose` are installed.
+5. Run Locally: Navigate to the project directory and run:
 ```bash
 docker-compose up --build
 ```
-5. Make changes: Implement your changes and commit them with clear, descriptive messages.
-6. Push to Your Fork: Push your changes to your fork on GitHub:
+6. Make changes: Implement your changes and commit them with clear, descriptive messages.
+7. Push to Your Fork: Push your changes to your fork on GitHub:
 ```bash
 git push origin dev
 ```
-7. Create a Pull Request: Go to the original repository and submit a pull request from your branch.
+8. Create a Pull Request: Go to the original repository and submit a pull request from your branch.
 
 This will set up your local environment for development.
 
