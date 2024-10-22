@@ -1,26 +1,171 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+body, html {
     margin: 0;
     padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    height: 100%;
 }
 
-.app-container {
-    text-align: center;
-    margin-top: 50px;
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
-    background-color: #282c34;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-buttons {
+    display: flex;
+}
+
+.nav-button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.search-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.search-bar {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    border: 1px solid #444;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.search-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.footer {
+    margin-top: auto;
+    text-align: center;
+    font-size: 12px;
+    color: #666;
+}
+
+/* Disaster Map specific styles */
+.disaster-map-container {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.disaster-map-title {
+    font-size: 24px;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.disaster-map-circle {
+    width: 300px;
+    height: 300px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+/* Helpline page styles */
+.page-title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.helpline-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.helpline-card {
+    background-color: #222;
+    border-radius: 8px;
     padding: 20px;
-    color: white;
+    text-align: center;
 }
 
-h1 {
-    font-size: 2.5rem;
+.helpline-card h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
 }
 
-.message {
-    font-size: 1.2rem;
-    margin-top: 10px;
+.phone-number {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+/* Recent Reports page styles */
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.news-card {
+    background-color: #222;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.news-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.news-card h2 {
+    font-size: 18px;
+    padding: 10px;
+    margin: 0;
+}
+
+.news-snippet {
+    font-size: 14px;
+    padding: 0 10px;
+    color: #ccc;
+}
+
+.news-source, .news-time {
+    font-size: 12px;
+    padding: 5px 10px;
+    color: #999;
+    margin: 0;
+}
+
+.news-time {
+    text-align: right;
 }
