@@ -11,10 +11,10 @@ Enhancing disaster preparedness by providing real-time alerts for impending natu
 ### Contributing Code
 To contribute code to Geowatch, follow these steps:
 
-1. Fork the Repository: Click the "Fork" button on the top right of this page and uncheck "Fork only main branch" while forking the repository.
-2. Clone the Dev Branch:
+1. Fork the Repository: Click the "Fork" button on the top right of this page.
+2. Clone the repo:
 ```bash
-git clone -b dev https://github.com/YOUR_USERNAME/geowatch.git
+git clone https://github.com/YOUR_USERNAME/geowatch.git
 ```
 3. Update .env: Rename `example.env` to `.env` and fill in the required keys.
 4. Install Docker: Download and install Docker from the [official website](https://docs.docker.com/engine/install/). Make sure both `docker` and `docker-compose` are installed.
@@ -25,7 +25,7 @@ docker-compose up --build
 6. Make changes: Implement your changes and commit them with clear, descriptive messages.
 7. Push to Your Fork: Push your changes to your fork on GitHub:
 ```bash
-git push origin dev
+git push origin master
 ```
 8. Create a Pull Request: Go to the original repository and submit a pull request from your branch.
 
