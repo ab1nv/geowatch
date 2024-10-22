@@ -1,8 +1,6 @@
-![GeoWatch](https://imgur.com/v6bUFKa)
-
 # GeoWatch
 
-Enhancing disaster preparedness by providing real-time alerts for impending natural disasters. GeoWatch leverages satellite imagery, machine learning, and data from NASA and Google Earth to deliver timely notifications and insights.
+Enhancing disaster preparedness by providing real-time alerts for impending natural disasters by leveraging satellite imagery, machine learning, and data from NASA, Google Earth and other sources.
 
 ## Features
 
@@ -33,12 +31,10 @@ git push origin dev
 This will set up your local environment for development.
 
 ### License
-This project is licensed under the MIT License. See the LICENSE.md file for details.
+This project is licensed under the MIT License. See the [LICENSE.md](https://github.com/ab1nv/geowatch/blob/main/LICENSE.md) file for details.
 
 ### Acknowledgments
 1. NASA for providing valuable data.
 2. Google Earth for satellite imagery.
 3. Open source contributors who make this project possible.
-
-[Logo Source](https://www.vectorstock.com/royalty-free-vector/earth-minimal-planet-flat-icon-vector-31540763)
-
+4. Team journalctl to make this idea come to reality.
