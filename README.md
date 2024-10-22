@@ -31,6 +31,39 @@ git push origin master
 
 This will set up your local environment for development.
 
+### Running
+
+#### Frontend
+1. Navigate to the frontend directory.
+```bash
+cd frontend/
+```
+2. Install packages.
+```bash
+npm install
+```
+3. Build the code.
+```bash
+npm run build
+```
+4. Run the server.
+```bash
+npm start && echo 'Frontend is accessible at http://localhost:3000'
+```
+#### Backend
+1. Navigate to the backend directory.
+```bash
+cd backend/
+```
+2. Install packages.
+```bash
+pip install poetry; poetry config virtualenvs.create false; poetry install --no-root
+```
+3. Run the server.
+```bash
+poetry run uvicorn app.main:app --host 0.0.0.0 --port 8000 && echo 'Backend is accessible at http://localhost:8000'
+```
+
 ### License
 This project is licensed under the MIT License. See the [LICENSE.md](https://github.com/ab1nv/geowatch/blob/main/LICENSE.md) file for details.
 
