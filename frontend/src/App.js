@@ -1,26 +1,32 @@
-import React, { useState, useEffect } from "react";
-import axios from "axios";
+import React from 'react';
+import './styles.css';
 
 function App() {
-    const [message, setMessage] = useState("Loading...");
-
-    useEffect(() => {
-        axios
-            .get("http://localhost:8000/example").then((response) => {
-                setMessage(response.data.message);
-            })
-            .catch((error) => {
-                console.error("Error fetching data:", error);
-                setMessage("Error fetching data");
-            });
-    }, []);
-
     return (
-        <div className="app-container">
-            <header>
-                <h1>Welcome to GeoWatch</h1>
-                <p className="message">{message}</p>
-            </header>
+        <div id="root">
+            <div className="container">
+                <header>
+                    <div className="logo">GeoWatch</div>
+                    <nav className="nav-buttons">
+                        <a href="disaster-map.html" className="nav-button">disaster map</a>
+                        <a href="helpline.html" className="nav-button">helpline</a>
+                        <a href="recent-reports.html" className="nav-button">recent reports</a>
+                    </nav>
+                </header>
+
+                <div className="search-container">
+                    <input
+                        type="text"
+                        className="search-bar"
+                        placeholder="Search a location or enter coordinates"
+                    />
+                    <div className="search-icon">🔍</div>
+                </div>
+
+                <footer className="footer">
+                    © journalctl, 2024-present.
+                </footer>
+            </div>
         </div>
     );
 }
